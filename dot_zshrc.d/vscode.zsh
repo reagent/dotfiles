@@ -1,6 +1,6 @@
 search_dirs=(
   "$HOME/Applications/Visual Studio Code.app"
-  "/Applications/Visual\ Studio\ Code.app"
+  "/Applications/Visual Studio Code.app"
 )
 
 VSCODE_FOUND=0
