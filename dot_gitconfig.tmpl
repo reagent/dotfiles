@@ -1,0 +1,17 @@
+[user]
+	email = {{ .email | quote }}
+	name = Patrick Reagan
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[core]
+	excludesFile = {{ .chezmoi.homeDir }}/.git/ignore
+	ignoreFile = {{ .chezmoi.homeDir }}/.git/ignore
+[alias]
+	recent-branches = for-each-ref --sort=-committerdate refs/heads/ --format='%(color: black)%(committerdate:short) %(color: cyan)%(refname:short)' --count 10
