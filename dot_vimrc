@@ -1,5 +1,6 @@
 set nu
 set ru
 set ai
-set sts=2
 set sw=2
+set expandtab
+set tabstop=2
