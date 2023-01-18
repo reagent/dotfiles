@@ -1,0 +1,43 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "trailing",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "window.zoomLevel": 1,
+    "[ruby]": {
+        "editor.defaultFormatter": "castwide.solargraph",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": false,
+        "editor.insertSpaces": true,
+        "editor.semanticHighlighting.enabled": true
+    },
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "solargraph.formatting": true,
+    "solargraph.logLevel": "debug",
+    "solargraph.commandPath": "{{ .chezmoi.homeDir }}/.rbenv/shims/solargraph",
+    "ruby.format": "rubocop",
+    "ruby.lint": {
+        "rubocop": true
+    },
+    "ruby.useLanguageServer": false,
+    "ruby.intellisense": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+}
