@@ -13,7 +13,6 @@ function pass-list() {
 
   echo "Available passwords:"
   echo $out
-
 }
 
 function pass() {
