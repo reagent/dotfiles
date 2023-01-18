@@ -7,7 +7,12 @@ VSCODE_FOUND=0
 
 for dir in $search_dirs; do
   if [[ -d $dir ]]; then
-    alias code="'$dir/Contents/Resources/app/bin/code' --user-data-dir $HOME/.vscode"
+    cmd="'$dir/Contents/Resources/app/bin/code' --user-data-dir $HOME/.vscode"
+    alias code=$cmd
+
+    if (( $+commands[bundle] )); then
+      export BUNDLER_EDITOR=$cmd
+    fi
 
     VSCODE_FOUND=1
     break
