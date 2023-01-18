@@ -13,5 +13,6 @@
 [core]
 	excludesFile = {{ .chezmoi.homeDir }}/.git/ignore
 	ignoreFile = {{ .chezmoi.homeDir }}/.git/ignore
+	editor = vim -c 'set colorcolumn=50,72'
 [alias]
 	recent-branches = for-each-ref --sort=-committerdate refs/heads/ --format='%(color: black)%(committerdate:short) %(color: cyan)%(refname:short)' --count 10
