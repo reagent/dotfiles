@@ -25,7 +25,7 @@ function pass() {
     return 1
   fi
 
-  op read op://Private/$1/password 2>/dev/null | pbcopy
+  op read -n op://Private/$1/password 2>/dev/null | pbcopy
 
   if [ $? != 0 ]; then
     >&2 echo "Password not found for $1"
