@@ -70,7 +70,7 @@ ZSH_CUSTOM=$HOME/.zshrc.d
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rbenv nvm heroku aliases z)
+plugins=(rbenv nvm heroku aliases z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,6 +90,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+export WORDCHARS='_.'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
