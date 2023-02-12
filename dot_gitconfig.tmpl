@@ -1,23 +1,23 @@
 [user]
-	email = {{ .git.email | quote }}
-	name = Patrick Reagan
+  email = {{ .git.email | quote }}
+  name = Patrick Reagan
 [credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager
+  helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
-	useHttpPath = true
+  useHttpPath = true
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
 [init]
   defaultBranch=master
 [core]
-	excludesFile = {{ .chezmoi.homeDir }}/.git/ignore
-	ignoreFile = {{ .chezmoi.homeDir }}/.git/ignore
-	editor = vim -c 'set colorcolumn=50,72'
+  excludesFile = {{ .chezmoi.homeDir }}/.git/ignore
+  ignoreFile = {{ .chezmoi.homeDir }}/.git/ignore
+  editor = vim -c 'set colorcolumn=50,72'
 [alias]
-	recent-branches = for-each-ref \
-		--sort=-committerdate refs/heads/ \
-		--format='%(color: black)%(committerdate:short) %(color: cyan)%(refname:short)' \
-		--count 10
+  recent-branches = for-each-ref \
+    --sort=-committerdate refs/heads/ \
+    --format='%(color: black)%(committerdate:short) %(color: cyan)%(refname:short)' \
+    --count 10
