@@ -53,7 +53,6 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "extensions.ignoreRecommendations": true,
     "workbench.startupEditor": "none",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "sorbet.enabled": true,
@@ -103,4 +102,14 @@
     ],
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 1,
+    // Disable sending telemetry
+    "docker-explorer.enableTelemetry": false, // Docker
+    "extensions.ignoreRecommendations": true, // VSCode Core
+    "telemetry.telemetryLevel": "off", // VSCode Core
+    "terraform.telemetry.enabled": false, // HashiCorp Terraform
+    // Disable showing release notes
+    "update.showReleaseNotes": false, // VSCode Core
+    // Disable showing welcome pages / walkthroughs
+    "vsicons.dontShowNewVersionMessage": true, // VSCode Icons
+    "workbench.welcomePage.walkthroughs.openOnInstall": false // VSCode Core
 }
