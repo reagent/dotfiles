@@ -71,6 +71,7 @@ ZSH_CUSTOM=$HOME/.zshrc.d
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  brew
   rbenv
   nvm
   heroku
