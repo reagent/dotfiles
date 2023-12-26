@@ -1,5 +1,5 @@
 function audio-dl() {
-  youtube-dl \
+  yt-dlp \
   --audio-format mp3 \
   --postprocessor-args "-id3v2_version 3" \
   --extract-audio \
@@ -12,7 +12,7 @@ function audio-dl() {
 }
 
 function playlist-dl() {
-  youtube-dl \
+  yt-dlp \
   --audio-format mp3 \
   --postprocessor-args "-id3v2_version 3" \
   --extract-audio \
