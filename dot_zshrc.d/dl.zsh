@@ -13,13 +13,18 @@ function audio-dl() {
 
 function playlist-dl() {
   yt-dlp \
+  --yes-playlist \
+  --format bestaudio \
   --audio-format mp3 \
-  --postprocessor-args "-id3v2_version 3" \
   --extract-audio \
   --embed-thumbnail \
   --add-metadata \
   --no-overwrites \
   --continue \
+  --download-archive ~/.yt-dlp/downloaded \
+  --use-postprocessor playlist_metadata \
   -o "%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s" \
   $1
 }
+
+
