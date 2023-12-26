@@ -10,6 +10,18 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+# Prevent the error when opening a new terminal:
+#
+#   [oh-my-zsh] Can't update: not a git repository.
+#
+# To update the oh-my-zsh dependency, invoke chezmoi directly:
+#
+#   $ chezmoi --refresh-externals apply
+#
+# Note that this will also attempt to apply modifications to local files as well
+#
+DISABLE_AUTO_UPDATE="true"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
