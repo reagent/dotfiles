@@ -10,7 +10,7 @@ function dotfiles-init() {
 
   # get dotfiles and update dependencies
   chezmoi init reagent --apply
-  brew bundle
+  brew bundle --file ~/Brewfile
 
   source ~/.zshrc
 }
