@@ -38,7 +38,7 @@
     "ruby.useLanguageServer": false,
     "ruby.intellisense": false,
     "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.occurrencesHighlight": false,
     "[json]": {
@@ -101,7 +101,6 @@
         }
     ],
     "workbench.editor.enablePreview": false,
-    "window.zoomLevel": 1,
     // Disable sending telemetry
     "docker-explorer.enableTelemetry": false, // Docker
     "extensions.ignoreRecommendations": true, // VSCode Core
@@ -111,5 +110,17 @@
     "update.showReleaseNotes": false, // VSCode Core
     // Disable showing welcome pages / walkthroughs
     "vsicons.dontShowNewVersionMessage": true, // VSCode Icons
-    "workbench.welcomePage.walkthroughs.openOnInstall": false // VSCode Core
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "window.zoomLevel": 1,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "emmet.includeLanguages": {
+    "ejs": "html"
+  },
+  "html.format.templating": true
+  // VSCode Core
 }
