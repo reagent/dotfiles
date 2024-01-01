@@ -3,6 +3,7 @@
 # Check if we have homebrew and install
 if (( ! $+commands[brew] )); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 if (( ! $+commands[chezmoi])); then
@@ -14,4 +15,3 @@ chezmoi init reagent --apply
 brew bundle --file ~/Brewfile
 
 source ~/.zshrc
-
