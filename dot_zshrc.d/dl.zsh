@@ -11,6 +11,18 @@ function audio-dl() {
   $1
 }
 
+
+
+function video-dl() {
+  yt-dlp \
+    --format bestvideo+bestaudio \
+    --recode-video mkv \
+    --continue \
+    --no-overwrites \
+    -o "%(title)s.%(ext)s" \
+    $1
+}
+
 function playlist-dl() {
   yt-dlp \
   --yes-playlist \
