@@ -1,6 +1,7 @@
 function audio-dl() {
   yt-dlp \
   --audio-format mp3 \
+  --no-playlist \
   --postprocessor-args "-id3v2_version 3" \
   --extract-audio \
   --embed-thumbnail \
