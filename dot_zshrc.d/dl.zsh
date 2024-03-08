@@ -12,8 +12,6 @@ function audio-dl() {
   $1
 }
 
-
-
 function video-dl() {
   yt-dlp \
     --format bestvideo+bestaudio \
