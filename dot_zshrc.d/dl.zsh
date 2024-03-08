@@ -22,6 +22,15 @@ function video-dl() {
     $1
 }
 
+# Usage: stream-dl <filename> <url>
+function stream-dl() {
+  ffmpeg \
+    -i $2 \
+    -c copy \
+    -bsf:a aac_adtstoasc \
+    $1
+}
+
 function playlist-dl() {
   yt-dlp \
   --yes-playlist \
